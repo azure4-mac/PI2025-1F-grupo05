@@ -1,0 +1,112 @@
+/* Importando as fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&display=swap');
+
+/* --- Reset Básico e Estilos Gerais --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FDFDFD;
+    color: #333333;
+    line-height: 1.7; /* Aumenta o espaçamento entre linhas */
+}
+
+/* --- Cabeçalho e Navegação --- */
+header {
+    background-color: #FFFFFF;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 50px; /* Defina a altura da sua logo */
+    width: auto;
+}
+
+header .menu-navegacao ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.8rem; /* Espaçamento entre os links */
+}
+
+header .menu-navegacao a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header .menu-navegacao a:hover {
+    color: #00A79D; /* Verde-água para efeito hover */
+}
+
+/* Estilo especial para o botão de Login */
+header .menu-navegacao .botao-login {
+    background-color: #00A79D;
+    color: #FFFFFF;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+header .menu-navegacao .botao-login:hover {
+    background-color: #00857a; /* Um tom mais escuro no hover */
+    color: #FFFFFF;
+}
+
+/* --- Estrutura e Conteúdo Principal --- */
+main {
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.secao-bem-vindo {
+    text-align: center; /* Centraliza todo o conteúdo da seção */
+}
+
+.imagem-destaque {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.imagem-destaque img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* --- Títulos e Textos --- */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin: 0 auto; /* Centraliza o parágrafo */
+    max-width: 70ch; /* Limita a largura para melhor legibilidade */
+}
+
+/* --- Rodapé --- */
+footer {
+    background-color: #333333;
+    color: #FDFDFD;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
